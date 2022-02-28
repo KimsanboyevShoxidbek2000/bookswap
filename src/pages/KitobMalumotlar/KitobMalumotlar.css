@@ -1,0 +1,272 @@
+.KitobMalumotlar {
+  background-color: #E5E5E5;
+  overflow: hidden;
+  padding: 1% 6.5%;
+  min-height: calc(100vh - 100px);
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-header {
+  margin: 2% 0;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-header h1 {
+  color: red;
+  font-family: Canaro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-header h1 a {
+  margin-left: 3%;
+  text-decoration: underline;
+  color: #000000;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card {
+  width: 100%;
+  background-color: #fff;
+  padding: 3%;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-left {
+  width: 45%;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-left img {
+  width: 100%;
+  height: 350px;
+  display: block;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right {
+  padding-left: 3%;
+  width: 45%;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right h2 {
+  font-size: 25px;
+  line-height: 36px;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right h2 span {
+  font-family: Canaro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card {
+  background-color: #fff;
+  width: 100%;
+  min-height: 400px;
+  padding: 4%;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card h1 {
+  font-family: Canaro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .avatar img {
+  width: 100px;
+  height: 100px;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .avatar .text {
+  margin-left: 3%;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .avatar .text h3 {
+  line-height: 36px;
+  font-size: 20px;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .text-information h2 {
+  font-family: Canaro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .text-information h2 span {
+  font-family: Canaro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .text-information h2 p {
+  display: inline-block;
+}
+
+.KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .btn a {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-left img {
+    height: 300px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right h2 span {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card {
+    min-height: 335px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card h1 {
+    font-size: 18px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .avatar img {
+    width: 80px;
+    height: 80px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .avatar .text h3 {
+    font-size: 18px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .text-information h2 {
+    font-size: 16px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .text-information h2 span {
+    font-size: 15px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .btn {
+    width: 180px;
+    height: 40px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .btn a {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .KitobMalumotlar .row .KitobMalumotlar-body {
+    width: 100% !important;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left {
+    margin-bottom: 2%;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card {
+    display: block;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-left img {
+    width: 100%;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right {
+    width: 100%;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right h2 span {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card {
+    min-height: 335px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card h1 {
+    font-size: 18px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .avatar img {
+    width: 80px;
+    height: 80px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .avatar .text h3 {
+    font-size: 18px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .text-information h2 {
+    font-size: 16px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .text-information h2 span {
+    font-size: 15px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .btn {
+    width: 180px;
+    height: 40px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-right .card .btn a {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .KitobMalumotlar .row .KitobMalumotlar-body {
+    width: 100% !important;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left {
+    margin-bottom: 2%;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card {
+    display: block;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-left {
+    width: 100%;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-left img {
+    width: 100%;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right {
+    width: 100%;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right h2 span {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+/*# sourceMappingURL=KitobMalumotlar.css.map */

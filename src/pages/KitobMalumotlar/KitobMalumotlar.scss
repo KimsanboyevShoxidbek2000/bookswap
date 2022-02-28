@@ -1,0 +1,310 @@
+.KitobMalumotlar{
+    background-color: #E5E5E5;
+    overflow: hidden;
+    padding: 1% 6.5%;
+    min-height: calc(100vh - 100px);
+    .row{
+        .KitobMalumotlar-header{
+            margin: 2% 0;
+             h1{
+                color: red;font-family: Canaro;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 48px;   
+                color: #000000;
+                a{
+                    margin-left: 3%;
+                    text-decoration: underline;
+                    color: #000000;
+                    
+                }
+             }
+        }
+        .KitobMalumotlar-body{
+            .row{
+                .KitobMalumotlar-body-left{
+                    .card{
+                        width: 100%;
+                        background-color: #fff;
+                        padding: 3%;
+                        border-radius: 20px;
+                        display: flex;
+                        
+                        .card-left{                        
+                            width: 45%;
+                           
+                            img{
+                                width: 100%;
+                                height: 350px;
+                                display: block;
+                            }
+                        }
+                        .card-right{
+                            padding-left: 3%;
+                            width: 45%;
+                            h2{
+                                font-size:25px;
+                                line-height: 36px;
+                                span{
+                                    font-family: Canaro;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                    line-height: 36px;
+                                    color: #000000;
+                                }
+                            }
+                        }
+                    }
+                }
+                .KitobMalumotlar-body-right{
+                    .card{
+                        background-color: #fff;
+                        width: 100%;
+                        min-height: 400px;
+                        padding: 4%;
+                        border-radius: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        h1{
+                            font-family: Canaro;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 36px;
+                            color: #000000;
+                        }
+                        .avatar{
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            flex-wrap: wrap;
+                            img{
+                                width: 100px;
+                                height: 100px;
+                            }
+                            .text{
+                                margin-left: 3%;
+                                h3{
+                                    line-height: 36px;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                        .text-information{
+                            h2{
+                                font-family: Canaro;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 20px;
+                                line-height: 29px;
+                                color: #000000;
+                                span{
+                                    font-family: Canaro;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 19px;
+                                    line-height: 29px;
+                                    color: #000000;
+                                }
+                                p{
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                        .btn{
+                            a{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+      .KitobMalumotlar{
+          .row{
+              .KitobMalumotlar-header{
+                  h1{
+
+                  }
+              }
+              .KitobMalumotlar-body{
+                  .row{
+                      .KitobMalumotlar-body-left{
+                          .card{
+                               .card-left{
+                                  img{
+                                      height: 300px;
+                                  }
+                                }
+                                .card-right{
+                                    h2{
+                                        font-size: 18px;
+                                        line-height: 25px;
+                                        span{
+                                            font-size: 17px;
+                                            line-height: 25px;
+                                        }
+                                    }
+                                }
+                          } 
+                      }
+                      .KitobMalumotlar-body-right{
+                          .card{
+                              min-height: 335px;
+                              h1{
+                                  font-size: 18px;
+                              }
+                              .avatar{
+                                  img{
+                                      width: 80px;
+                                      height: 80px;
+                                  }
+                                  .text{
+                                      h3{
+                                          font-size: 18px;
+                                      }
+                                  }
+                               }
+                               .text-information{
+                                   h2{
+                                       font-size: 16px;
+                                       span{
+                                          font-size: 15px;
+                                       }
+                                   }
+                               }
+                               .btn{
+                                   width: 180px;
+                                   height: 40px;
+                                   a{
+                                       height: 40px;
+                                   }
+                               }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+}
+@media screen and (max-width: 800px) {
+      .KitobMalumotlar{
+          .row{
+              .KitobMalumotlar-header{
+                  h1{
+
+                  }
+              }
+              .KitobMalumotlar-body{
+                  width: 100% !important;
+                  .row{
+                      .KitobMalumotlar-body-left{
+                        margin-bottom: 2%;
+                          .card{
+                              display: block;
+                               .card-left{
+                                   width: 80%;
+                                   margin: 0 auto;
+                                  img{
+                                      width: 100%;
+                                      
+                                  }
+                                }
+                                .card-right{
+                                    width: 100%;
+                                    h2{
+                                        font-size: 18px;
+                                        line-height: 25px;
+                                        span{
+                                            font-size: 17px;
+                                            line-height: 25px;
+                                        }
+                                    }
+                                }
+                          } 
+                      }
+                      .KitobMalumotlar-body-right{
+                          .card{
+                              min-height: 335px;
+                              h1{
+                                  font-size: 18px;
+                              }
+                              .avatar{
+                                  img{
+                                      width: 80px;
+                                      height: 80px;
+                                  }
+                                  .text{
+                                      h3{
+                                          font-size: 18px;
+                                      }
+                                  }
+                               }
+                               .text-information{
+                                   h2{
+                                       font-size: 16px;
+                                       span{
+                                          font-size: 15px;
+                                       }
+                                   }
+                               }
+                               .btn{
+                                   width: 180px;
+                                   height: 40px;
+                                   a{
+                                       height: 40px;
+                                   }
+                               }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+}
+@media screen and (max-width: 425px) {
+      .KitobMalumotlar{
+          .row{
+              .KitobMalumotlar-header{
+                  h1{
+
+                  }
+              }
+              .KitobMalumotlar-body{
+                  width: 100% !important;
+                  .row{
+                      .KitobMalumotlar-body-left{
+                        margin-bottom: 2%;
+                          .card{
+                              display: block;
+                               .card-left{
+                                   width: 100%;
+                                  img{
+                                      width: 100%;
+                                      
+                                  }
+                                }
+                                .card-right{
+                                    width: 100%;
+                                    h2{
+                                        font-size: 18px;
+                                        line-height: 25px;
+                                        span{
+                                            font-size: 17px;
+                                            line-height: 25px;
+                                        }
+                                    }
+                                }
+                          } 
+                      }
+                  }
+              }
+          }
+      }
+}

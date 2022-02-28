@@ -1,0 +1,227 @@
+.elonlaroynasi {
+  background-color: #E5E5E5;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  padding: 1% 6.5%;
+}
+
+.elonlaroynasi .row .Card .card {
+  position: relative;
+}
+
+.elonlaroynasi .row .Card .card .heart svg {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header {
+  width: 70%;
+  margin: 3% auto;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row {
+  margin-top: 20px;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 40px;
+  padding: 0;
+  border-radius: 10px 0 0 10px;
+  border-right: 1px solid #777;
+  background-color: #fff;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .search svg {
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .search input {
+  width: 90%;
+  height: 40px;
+  background: transparent;
+  color: #000 !important;
+  border: none;
+  font-size: 18px;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .search input::-webkit-input-placeholder {
+  color: #777;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .search input:-ms-input-placeholder {
+  color: #777;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .search input::-ms-input-placeholder {
+  color: #777;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .search input::placeholder {
+  color: #777;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar {
+  width: 25%;
+  height: 40px;
+  padding: 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid #777;
+  padding-right: 3px;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar svg {
+  width: 10%;
+  font-size: 20px;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar select {
+  width: 90%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 40px;
+  font-size: 18px;
+  color: #000;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar select:focus {
+  outline: none;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .janrlar {
+  width: 25%;
+  height: 40px;
+  padding: 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 10px 10px 0;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .janrlar svg {
+  width: 10%;
+  font-size: 20px;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .janrlar select {
+  width: 90%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 40px;
+  font-size: 18px;
+  color: #000;
+  border-radius: 0 10px 10px 0;
+}
+
+.elonlaroynasi .row .elonlaroynasi-header .row .janrlar select:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .elonlaroynasi .row .elonlaroynasi-header .row .search {
+    height: 35px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar {
+    height: 35px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar select {
+    height: 35px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .janrlar {
+    height: 35px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .janrlar select {
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .elonlaroynasi .row .elonlaroynasi-header {
+    width: 100%;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row {
+    min-height: 90px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .search {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar {
+    height: 35px;
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+    padding-left: 3px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar select {
+    height: 35px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .janrlar {
+    height: 35px;
+    width: 50%;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .janrlar select {
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .elonlaroynasi .row .elonlaroynasi-header {
+    width: 90%;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row {
+    min-height: 90px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .search {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar {
+    height: 35px;
+    width: 50%;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar select {
+    height: 35px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .janrlar {
+    height: 35px;
+    width: 50%;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .janrlar select {
+    height: 35px;
+  }
+}
+/*# sourceMappingURL=ElonlarOynasi.css.map */
