@@ -1,38 +1,1000 @@
-.App {
-  text-align: center;
+
+.navbar{
+    background: linear-gradient(103.17deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.05) 76.68%);
+    backdrop-filter: blur(40px);
+    max-width: 1920px;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0  6.5%;
+}
+.navbar .brand a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .brand a span{
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.navbar svg{
+    color:#FFFFFF;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 28.42px;
+    height: 30px;
+}
+.navbar ul{
+    list-style-type: none;
+}
+.navbar ul li{
+    display:inline-block;
+    margin:  0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+  
+}
+.navbar ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    height: 2px;
+    width: 0%;
+    transition: all 0.9s linear;
+}
+.navbar ul li a:hover::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    transition: all 0.9s linear;
+}
+.navbar .icon{
+    display: flex;
+    align-items: center;
+}
+.navbar .icon li{
+    list-style: none;
+}
+.navbar  .icon .search {
+    position: relative;
+    margin-right: 10%;
+ 
+}
+.navbar  .icon .search input{
+   color: #fff;
+   padding: 5px 10px;
+   border-radius: 10px;
+   width: 0px;
+   transition: 0.5s ease-in;
+   font-size: 18px;
+   border: none;
+}
+.navbar .icon .search input:focus{
+    outline: none;
+}
+.navbar  .icon .search svg{
+    position: absolute;
+    top: 29%;
+    left: -35%;
+    cursor: pointer;
+}
+.navbar .icon li{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+.search-show{
+    width: 180px !important;
+    transition: 0.5s ease-in;
+    border: 1px solid #e5e5e5 !important;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.app{
+    width: 100%;
+    min-height:100vh;
+    background-image: url('./images/50c7c3a5-ada6-4b5f-b5d3-53cf9cd323c4\ 1.png');
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+.hero{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.hero-left, .hero-right{
+    background: linear-gradient(103.17deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.05) 76.68%);
+    backdrop-filter: blur(40px);
+    min-height: 300px;
+    padding: 30px;
+    position: relative;
+    
+    /* /* border-image-source: linear-gradient(279.46deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%); */
+    border-radius: 20px; 
+    
+
+}
+.hero-left h1 ,.hero-right h1{
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.hero-left p ,.hero-right p{
+    /* font-family: Canaro ; */
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+.col-6{
+    position: relative;
+}
+.hero-left img {
+  width: 430px;
+  height: 500px;
+  position: absolute;
+  top:-57px;
+  right:-23px;
+  z-index: 101;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.hero-right img{
+    width: 390px;
+    height: 460px;
+    position: absolute;
+    top:-48px;
+    right:2px;
+    z-index: 101;
+}
+.hero-left::after,.hero-right::after{
+    content: '';
+    width: 285px;
+    height: 395px;
+    background-color: #fff;
+    z-index: 100;
+    position: absolute;
+    top: -23px;
+    right:41px;
+    border-radius: 10px;
+    transform: rotate(15deg);
+}
+a{
+    text-decoration: none;
+}
+/*Compantents Kirish and Tastiqlash style start*/
+.Kirish , .Tastiqlash , .account , .Malumotlarim{
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    padding:  0;
+    margin-top: 30px;
+}
+.KirishCardStart h1 , .Tastiqlash h1, .Malumotlarim h1 , .account h1{
+    color: white;
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 72px;    
+}
+.KirishCardCenter h1 , .TastiqlashCard h1 ,.MalumotlarimCard h1 {
+    text-align: center;
+    color: white;
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 72px;
+   
+}
+.KirishCardCenter , .TastiqlashCard, .MalumotlarimCard , .accountCard{
+   background: linear-gradient(103.17deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.05) 76.68%);
+   backdrop-filter: blur(40px);
+   border-radius: 20px;
+   position: relative;
+   min-height:550px;
+   padding: 25px;
+
+}
+.close svg{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+ .inputs{
+    width: 100%;
+    margin-top: 60px;
+}
+ .inputs .input, input{
+    display:block;
+    width: 80%;
+    margin: 20px auto;
+    background-color:transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size:18px;
+}
+ .inputs input:focus, .input:focus{
+    outline: none;
+}
+ .inputs input{
+     font-family: Canaro;
+     font-weight: 500;
+     background-color:transparent;
+ }
+ option{
+     font-family: Canaro;
+     font-weight: 500;
+     background-color: transparent;
+     color: black;
+ }
+ .eye1{
+     position: absolute;
+     bottom: 25.5%;
+     right: 15.5%;
+     color: white;
+ }
+.eye2{
+    position: absolute;
+    bottom: 18%;
+    right: 15.5%;
+    color: white;
+}
+ .inputs input::placeholder, .input::placeholder{
+    color: white;
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.MalumotlarimCard{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+ .MalumotlarimCard .btn{
+     width: 60%;
+     margin: 0 auto;
+     
+ }
+.KirishCardCenter .inputs i{
+  position: absolute;
+  right:66px;
+  top: 36.8%;
+  color: #fff;
+  cursor: pointer;
+}
+.KirishCardCenter .btn , .TastiqlashCard .btn , .accountCard .btn , .MalumotlarimCard .btn{
+    position: absolute;
+    bottom: 30px;
+    left: 25%;
+    width: 50%;
+    margin: 0 auto;
+
+}
+.KirishCardCenter p{
+    margin-top: 30px;
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    text-align: center;
+}
+.raqam{
+    width: 80%;
+    margin: 20px auto;
+    margin-top: 30px;
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    text-align: left;
+}
+/*Components Kirish and Tastiqlash style end*/
+
+/*Responsiv style start*/
+@media screen and (max-width: 1024px) {
+    .navbar .brand a span{
+       font-size: 25px;
+    }
+}
+@media(max-width: 1400px) {
+    .hero-left h1 ,.hero-right h1{
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 55px;
+        color: #FFFFFF;
+    }
+    .hero-left p ,.hero-right p{
+        /* font-family: Canaro ; */
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+        font-family: sans-serif;
+        color: #FFFFFF;
+        padding-right: 20px;
+    }
+    .hero-left img {
+        width: 360px;
+        height: 420px;
+        position: absolute;
+        top:-29px;
+        right:-22px;
+        z-index: 101;
+    }
+
+    .hero-right img{
+        width: 320px;
+        height: 390px;
+        position: absolute;
+        top:-20px;
+        right:-1px;
+        z-index: 101;
+    }
+    .hero-left::after,.hero-right::after{
+        content: '';
+        width: 245px;
+        height: 320px;
+        background-color: #fff;
+        z-index: 100;
+        position: absolute;
+        top: -1px;
+        right:28px;
+        border-radius: 10px;
+        transform: rotate(15deg);
+    }
+}
+@media (max-width: 1200px) {
+    .hero-left h1 ,.hero-right h1{
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    .hero-left p ,.hero-right p{
+         font-family: Canaro ;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        padding-right: 20px;
+        margin-bottom:15px;
+    }
+    .hero-left img {
+        width: 300px;
+        height: 370px;
+        position: absolute;
+        top:-39px;
+        right:-18px;
+        z-index: 101;
+    }
+
+    .hero-right img{
+        width: 265px;
+        height: 330px;
+        position: absolute;
+        top:-30px;
+        right:-0px;
+        z-index: 101;
+    }
+    .hero-left::after,.hero-right::after{
+        content: '';
+        width: 200px;
+        height: 280px;
+        background-color: #fff;
+        z-index: 100;
+        position: absolute;
+        top: -13px;
+        right:23px;
+        border-radius: 10px;
+        transform: rotate(15deg);
+    }
+    .hero-left , .hero-right{
+        padding: 20px;
+    }
+}
+@media (min-width: 765px) and (max-width: 993px){
+    .hero .row{
+        justify-content: center;
+    }
+    .hero-left , .hero-right{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 760px){
+    .hero{
+        margin-top: 30px;
+    }
+    .hero-left , .hero-right{
+        margin: 30px 10px;
+    }
+}
+@media screen and (max-width: 426px) {
+    .KirishCardStart h1 , .Tastiqlash h1, .Malumotlarim h1 , .account h1{
+        color: white;
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 60px;    
+    }
+    .KirishCardCenter h1 , .TastiqlashCard h1 ,.MalumotlarimCard h1 {
+        text-align: center;
+        color: white;
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 50px;
+       
+       
+    }
+    .KirishCardCenter , .TastiqlashCard, .MalumotlarimCard , .accountCard{
+       background: linear-gradient(103.17deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.05) 76.68%);
+       backdrop-filter: blur(40px);
+       border-radius: 20px;
+       position: relative;
+       min-height:550px;
+       padding: 25px;
+    
+    }
+    .inputs .input{
+        display:block;
+        width: 80%;
+        margin: 20px auto;
+        background-color:transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        font-size:16px;
+    }
+    .inputs input{
+        font-size: 16px;
+    }
+    .eye1{
+        position: absolute;
+        bottom: 32.5%;
+        right: 15.5%;
+        color: white;
+    }
+   .eye2{
+       position: absolute;
+       bottom: 25.3%;
+       right: 15.5%;
+       color: white;
+   }
+    .hero-left h1 ,.hero-right h1{
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    .hero-left p ,.hero-right p{
+         font-family: Canaro ;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 16px;
+        color: #FFFFFF;
+        padding-right: 20px;
+        margin-bottom:15px;
+    }
+    .hero-left img {
+        width: 220px;
+        height: 250px;
+        position: absolute;
+        top:-20px;
+        right:-20px;
+        z-index: 101;
+    }
+
+    .hero-right img{
+        width: 200px;
+        height: 230px;
+        position: absolute;
+        top:-13px;
+        right:-8px;
+        z-index: 101;
+    }
+    .hero-left::after,.hero-right::after{
+        content: '';
+        width: 150px;
+        height: 200px;
+        background-color:#fff;
+        z-index: 100;
+        position: absolute;
+        top: -3px;
+        right:11px;
+        border-radius: 10px;
+        transform: rotate(15deg);
+    }
+    .hero-left , .hero-right{
+        padding: 20px;
+    }
+    .Kirish , .Tastiqlash , .account , .Malumotlarim{
+        width: 88%;
+        min-height: calc(30vh);
+        padding:  0;
+        margin: 0 auto;
+        margin-top: 30px;
+        
+    }
+    .KirishCardStart h1 , .Tastiqlash h1, .Malumotlarim h1 , .account h1{
+        color: white;
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height:50px;    
+    }
+    .KirishCardCenter h1 , .TastiqlashCard h1 ,.MalumotlarimCard h1 {
+        text-align: center;
+        color: white;
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 50px;
+       
+    }
+    .KirishCardCenter .inputs i{
+        position: absolute;
+        right:16%;
+        top: 32%;
+        color: #fff;
+        cursor: pointer;
+      }
+}
+@media screen and (max-width: 376px) {
+    .hero{
+        width: 100%;
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    .navbar {
+        height: 80px;
+    }
+    .hero-left h1 , .hero-right h1{
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    .hero-left p ,.hero-right p{
+         font-family: Canaro ;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+        padding-right: 20px;
+        margin-bottom:15px;
+    }
+    .hero-left img {
+        width: 200px;
+        height: 230px;
+        position: absolute;
+        top:10px;
+        right:-20px;
+        z-index: 101;
+    }
+
+    .hero-right img{
+        width: 175px;
+        height: 210px;
+        position: absolute;
+        top:13px;
+        right:-8px;
+        z-index: 101;
+    }
+    .hero-left::after,.hero-right::after{
+        content: '';
+        width: 130px;
+        height: 180px;
+        background-color:#fff;
+        z-index: 100;
+        position: absolute;
+        top: 24px;
+        right:11px;
+        border-radius: 10px;
+        transform: rotate(15deg);
+    }
+    .hero-left , .hero-right{
+        padding: 20px;
+    }
+    .Kirish , .Tastiqlash , .account , .Malumotlarim{
+        width: 88%;
+        min-height: calc(30vh);
+        padding:  0;
+        margin: 0 auto;
+        margin-top: 30px;
+        
+    }
+    .KirishCardStart h1 , .Tastiqlash h1, .Malumotlarim h1 , .account h1{
+        color: white;
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height:50px;    
+    }
+    .KirishCardCenter h1 , .TastiqlashCard h1 ,.MalumotlarimCard h1 {
+        text-align: center;
+        color: white;
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 50px;
+       
+    }
+    .Kirish , .Tastiqlash , .account , .Malumotlarim{
+        width: 100%;
+        min-height: calc(50vh - 100px);
+        padding:  0 20px;
+        margin-top: 30px;
+        
+    }
+    .inputs{
+        width: 100%;
+        margin-top: 60px;
+    }
+     .inputs .input, input{
+        display:block;
+        width: 80%;
+        margin: 20px auto;
+        background-color:transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        font-size: 16px;
+    }
+     .inputs input:focus, .input:focus{
+        outline: none;
+    }
+     .inputs input{
+         font-family: Canaro;
+         font-weight: 500;
+         background-color:transparent;
+     }
+     .inputs .input::placeholder, input::placeholder{
+         font-size: 16px !important;
+     }
+}
+@media screen and (max-width: 326px) {
+  .hero-left , .hero-right{
+      min-height: 200px;
+  }
+.hero-left h1 , .hero-right h1{
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.hero-left p ,.hero-right p{
+     font-family: Canaro ;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding-right: 20px;
+    margin-bottom:15px;
+}
+.hero-left img {
+    width: 170px;
+    height: 200px;
+    position: absolute;
+    top:10px;
+    right:-12px;
+    z-index: 101;
+}
+
+.hero-right img{
+    width: 145px;
+    height: 180px;
+    position: absolute;
+    top:13px;
+    right:-1px;
+    z-index: 101;
+}
+.hero-left::after,.hero-right::after{
+    content: '';
+    width: 108px;
+    height: 150px;
+    background-color:#fff;
+    z-index: 100;
+    position: absolute;
+    top: 24px;
+    right:11px;
+    border-radius: 10px;
+    transform: rotate(15deg);
+}
+}
+@media screen and (max-width: 321px) {
+    .hero-left , .hero-right{
+        min-height: 200px;
+    }
+  .hero-left h1 , .hero-right h1{
+      font-family: Canaro;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      color: #FFFFFF;
+  }
+  .hero-left p ,.hero-right p{
+       font-family: Canaro ;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 16px;
+      color: #FFFFFF;
+      padding-right: 20px;
+      margin-bottom:15px;
+  }
+  .hero-left img {
+      width: 155px;
+      height: 190px;
+      position: absolute;
+      top:10px;
+      right:-12px;
+      z-index: 101;
+  }
+  
+  .hero-right img{
+      width: 135px;
+      height: 170px;
+      position: absolute;
+      top:13px;
+      right:-1px;
+      z-index: 101;
+  }
+  .hero-left::after,.hero-right::after{
+      content: '';
+      width: 100px;
+      height: 150px;
+      background-color:#fff;
+      z-index: 100;
+      position: absolute;
+      top: 23px;
+      right:11px;
+      border-radius: 10px;
+      transform: rotate(15deg);
   }
 }
+/*Responsiv style end*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.MElonlar{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #E5E5E5;;
 }
-
-.App-link {
-  color: #61dafb;
+.Card{
+    margin: 10px 0;
 }
+.Card .card{
+    min-height: 400px;
+    max-width: 450px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding:4%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.Card .Card-img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.Card .book-information{
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+}
+.Card .book-information span{
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+}
+.Card .book-time{
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+@media screen and (max-width: 1024px){
+    .Card .card{
+        min-height: 350px;
+    }
+    .Card .book-information{
+          font-size: 16px;
+    }
+    .Card .book-information span{
+        font-size: 16px;
+    }
+    .Card .book-time{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 425px){
+    .Card .card{
+        min-height: 350px;
+    }
+    .Card .book-information{
+        font-size: 16px;
+    }
+    .Card .book-information span{
+        font-size: 16px;
+    }
+    .Card .book-time{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 426px) {
+    .navbar .icon{
+      min-width: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .navbar .brand a span{
+        font-size: 20px;
+    
+    }
+    .Card{
+        margin: 10px 0;
+        padding: 5px;
+        }
+    .Card .card{
+        min-height: 250px;
+        max-width: 450px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+       
+    
+    }
+    .Card .Card-img{
+        width: 100%;
+        margin-bottom: 5px;
+        max-height: 150px;
+    }
+    .Card .book-information{
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 24px;
+        color: #000000;
+    }
+    .Card .book-information span{
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 29px;
+        color: #000000;
+    }
+    .Card .book-time{
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 24px;
+        color: #000000;
+    }
+}
+@media screen and (max-width: 326px) {
+    .navbar .icon{
+      min-width: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .navbar .brand a span{
+        font-size: 20px;
+    
+    }
+    .Card{
+        margin: 10px 0;
+        padding: 5px;
+        }
+    .Card .card{
+        min-height: 250px;
+        max-width: 450px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+       
+    
+    }
+    .Card .Card-img{
+        width: 100%;
+        margin-bottom: 5px;
+        max-height: 150px;
+    }
+    .Card .book-information{
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 24px;
+        color: #000000;
+    }
+    .Card .book-information span{
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 29px;
+        color: #000000;
+    }
+    .Card .book-time{
+        font-family: Canaro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 24px;
+        color: #000000;
+    }
 }

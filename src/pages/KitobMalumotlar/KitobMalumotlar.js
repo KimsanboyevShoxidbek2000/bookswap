@@ -1,13 +1,15 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Link} from 'react-router-dom';
 import { data } from '../Data/Data';
 import {VscSearch ,VscThreeBars } from 'react-icons/vsc';
 import {BsHeart, BsPerson} from 'react-icons/bs';
 import { bookData } from '../../BookData/BookData';
+import {RiCloseFill} from 'react-icons/ri';
 import './KitobMalumotlar.css';
 import Button from '../../components/Button/Button';
 import Footer from '../../components/Footer/Footer';
 const KitobMalumotlar = () => {
+    const [show , setShow] = useState(false)
   return (
     <>
      {/*Navbar section start*/}
@@ -15,26 +17,29 @@ const KitobMalumotlar = () => {
                 <div className="brand">
                     <Link to='/'><img src={data.brandImg} alt="brand"/><span>BookSwap</span></Link>
                 </div>
-                <ul id='nav'>
-
-                    <li>
+                <ul id='nav' className = {show? 'show-menu' : ''}>
+                <span onClick={() => {  setShow(!show)}}><RiCloseFill/></span>
+                      <input type="search" placeholder='Qidirish' />
+                    <li onClick={() => {  setShow(!show)}}>
                         <Link to='/'>Bosh sahifa</Link>
                     </li>
-                    <li>
+                    <li onClick={() => {  setShow(!show)}}>
                         <Link to='/elonlaroynasi'>E'lonlar oynasi</Link>
                     </li>
-                    <li>
+                    <li onClick={() => {  setShow(!show)}}>
                         <Link to='/MeningElonlarim'>Mening e'lonlarim</Link>
                     </li>
-                    <li>
+                    <li onClick={() => {  setShow(!show)}}>
                         <Link to='/kitobjoylash'>Kitob joylash</Link>
                     </li>
                 </ul>
                 <div className="icon">
                     <li className='search' ><VscSearch/></li>
                     <li className='heart'> <Link to={'/heart'}><BsHeart/></Link></li>
-                    <li className='person'><Link to={''}><BsPerson/></Link></li>
-                    <li className='bars'><VscThreeBars/></li>
+                    <li className='person'><Link to={'/account'}><BsPerson/></Link></li>
+                    <li className='bars' onClick={() => {
+                        setShow(!show)
+                    }}><VscThreeBars/></li>
 
                 </div>
             </div>

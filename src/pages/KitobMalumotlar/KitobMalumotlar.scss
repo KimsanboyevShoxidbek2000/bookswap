@@ -268,12 +268,12 @@
           }
       }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
       .KitobMalumotlar{
           .row{
               .KitobMalumotlar-header{
                   h1{
-
+                    font-size: 25px;
                   }
               }
               .KitobMalumotlar-body{
@@ -291,6 +291,7 @@
                                   }
                                 }
                                 .card-right{
+                                    margin-top: 3%;
                                     width: 100%;
                                     h2{
                                         font-size: 18px;

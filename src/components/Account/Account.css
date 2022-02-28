@@ -1,0 +1,44 @@
+
+
+
+
+.accountCard p{
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    padding-left: 15px;
+}
+.accountCard .cardHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.accountCard .cardHeader h1{
+    font-size: 40px;
+}
+.navbar .icon svg{
+    margin-left: 30px;
+}
+.navbar .icon svg{
+    width: 28px;
+    height: 24.03px;
+}
+
+@media (max-width: 1200px) {
+    .navbar ul{
+        display: none;
+    }
+}
+@media screen and (max-width: 426px) {
+    .accountCard p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .accountCard .cardHeader h1{
+        font-size: 30px;
+    }
+}

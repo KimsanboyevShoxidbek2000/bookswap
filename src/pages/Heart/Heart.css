@@ -26,4 +26,20 @@
   font-size: 30px;
   color: red;
 }
+
+@media screen and (max-width: 426px) {
+  .Heart .Heart-header h1 {
+    font-size: 25px;
+  }
+  .Heart .Card .card {
+    position: relative;
+  }
+  .Heart .Card .card .heart {
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    font-size: 20px;
+    color: red;
+  }
+}
 /*# sourceMappingURL=Heart.css.map */

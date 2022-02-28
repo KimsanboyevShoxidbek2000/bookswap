@@ -148,6 +148,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .elonlaroynasi .row .sarlavha h1 {
+    font-size: 25px;
+    margin-top: 2%;
+  }
   .elonlaroynasi .row .elonlaroynasi-header .row .search {
     height: 35px;
   }
@@ -156,16 +160,29 @@
   }
   .elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar select {
     height: 35px;
+    font-size: 16px;
   }
   .elonlaroynasi .row .elonlaroynasi-header .row .janrlar {
     height: 35px;
   }
   .elonlaroynasi .row .elonlaroynasi-header .row .janrlar select {
     height: 35px;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .elonlaroynasi .row .Card .card {
+    position: relative;
+  }
+  .elonlaroynasi .row .Card .card .heart svg {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+  }
   .elonlaroynasi .row .elonlaroynasi-header {
     width: 100%;
   }
@@ -178,6 +195,21 @@
     border: none;
     border-radius: 10px;
   }
+  .elonlaroynasi .row .elonlaroynasi-header .row .search input {
+    font-size: 16px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .search input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .search input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .search input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .search input::placeholder {
+    font-size: 16px;
+  }
   .elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar {
     height: 35px;
     width: 50%;
@@ -186,6 +218,9 @@
   }
   .elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar select {
     height: 35px;
+  }
+  .elonlaroynasi .row .elonlaroynasi-header .row .viloyatlar select option {
+    font-size: 16px;
   }
   .elonlaroynasi .row .elonlaroynasi-header .row .janrlar {
     height: 35px;

@@ -27,3 +27,24 @@
        } 
     }
 }
+@media screen and (max-width: 426px) {
+   .Heart{
+      .Heart-header{
+        h1{
+            font-size: 25px
+        }
+      }
+      .Card{
+        .card{
+            position: relative;
+            .heart{
+                position: absolute;
+                top: 4%;
+                left: 5%;
+                font-size: 20px;
+                color: red;
+            }
+        } 
+     } 
+   }
+}

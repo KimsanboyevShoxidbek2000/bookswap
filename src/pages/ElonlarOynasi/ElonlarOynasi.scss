@@ -117,6 +117,12 @@
 @media screen and (max-width: 1024px) {
     .elonlaroynasi{
         .row{
+            .sarlavha{
+                h1{
+                    font-size: 25px;
+                    margin-top: 2%;
+                }
+            }
             .elonlaroynasi-header{
                 .row{
                     .search{
@@ -126,12 +132,14 @@
                         height: 35px;
                         select{
                             height: 35px;
+                            font-size: 16px;
                         }
                     }
                     .janrlar{
                         height: 35px;
                         select{
                             height: 35px;
+                            font-size: 16px;
                         }
                     }
                 }
@@ -142,7 +150,21 @@
 @media screen and (max-width: 768px) {
     .elonlaroynasi{
         .row{
-          
+            .Card{
+                .card{
+                    position: relative;
+                    .heart{
+                        svg{
+                            position: absolute;
+                            top: 4%;
+                            left: 4%;
+                            color: red;
+                            font-size: 20px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
             .elonlaroynasi-header{
                 width: 100%;
                 .row{
@@ -152,6 +174,12 @@
                         height: 35px;
                         border: none;
                         border-radius: 10px;
+                        input{
+                            font-size: 16px;
+                            &::placeholder{
+                                font-size: 16px;
+                            }
+                        }
                     }
                     .viloyatlar{
                         height: 35px;
@@ -160,6 +188,9 @@
                         padding-left: 3px;
                         select{
                             height: 35px;
+                            option{
+                                font-size: 16px;
+                            }
                         }
                     }
                     .janrlar{
@@ -186,6 +217,7 @@
                         height: 35px;
                         border: none;
                         border-radius: 10px;
+                       
                     }
                     .viloyatlar{
                         height: 35px;

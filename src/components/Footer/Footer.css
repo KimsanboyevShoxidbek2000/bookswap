@@ -1,0 +1,146 @@
+.Footer{
+    min-height: 400px;
+    width: 100% !important;
+    background-color: #000;
+    padding: 0  6%;
+    color: white;
+    align-items: center;
+    padding-top: 50px;
+
+}
+.Footer  .row{
+
+    min-height: 350px;
+}
+.Footer li{
+    list-style: none;
+}
+.Footer li a{
+    text-decoration: none;
+    color: white;
+}
+.Footer .brand{
+    display: flex;
+    align-items: center;
+}
+.brand span{
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.Footer .brand img{
+    width: 33.33px;
+    height: 60px;
+}
+.Footer p, a{
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+.Footer .search{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding-right: 10px;
+    border-radius: 8px;
+}
+.Footer .search input{
+    height: 30px;
+    width: 80%;
+    border: none;
+    font-family: Canaro;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+
+}
+.Footer .search input:focus{
+    outline: none;
+}
+.Footer .search input::placeholder{
+    opacity: 0.7;
+    font-family: Canaro;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px
+}
+.Footer .search svg{
+    width: 20%;
+    color: black;
+    display: block;
+}
+.Footer .text{
+    opacity: 0.7;
+}
+.FooterBottom{
+    margin-top: 50px;
+    height: 120px;
+
+}
+.FooterBottom div{
+    border-top: 1px solid #FFFFFF;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FooterBottom div span{
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 992px) {
+    .Footer  .col-12{
+       margin: 15px 0;
+   }
+}
+@media screen and (max-width: 426px) {
+    .Footer .row .brand span{
+        font-size: 20px;
+    }
+    .Footer .row .text{
+      font-size: 16px;
+    }
+    .Footer a{
+        font-size: 16px;
+    }
+    .FooterBottom div span{
+        font-size: 16px;
+    }
+    .Footer .search input{
+        height: 30px;
+        width: 80%;
+        border: none;
+        font-family: Canaro;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000;
+    
+    }
+    .Footer .search input:focus{
+        outline: none;
+    }
+    .Footer .search input::placeholder{
+        opacity: 0.7;
+        font-family: Canaro;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px
+    }
+}

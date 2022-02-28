@@ -241,7 +241,10 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
+  .KitobMalumotlar .row .KitobMalumotlar-header h1 {
+    font-size: 25px;
+  }
   .KitobMalumotlar .row .KitobMalumotlar-body {
     width: 100% !important;
   }
@@ -258,6 +261,7 @@
     width: 100%;
   }
   .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right {
+    margin-top: 3%;
     width: 100%;
   }
   .KitobMalumotlar .row .KitobMalumotlar-body .row .KitobMalumotlar-body-left .card .card-right h2 {

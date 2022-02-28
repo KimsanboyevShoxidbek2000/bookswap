@@ -1,14 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './ElonlarOynasi.css';
 import {VscSearch ,VscThreeBars } from 'react-icons/vsc';
 import {BsHeart, BsPerson} from 'react-icons/bs';
 import {MdLocationOn , MdMenuBook} from 'react-icons/md'
 import {AiTwotoneHeart} from 'react-icons/ai'
+import {RiCloseFill} from 'react-icons/ri';
 import {data} from "../Data/Data";
 import { bookData } from '../../BookData/BookData';
 import {Link} from 'react-router-dom'
 import Footer from '../../components/Footer/Footer';
 const ElonlarOynasi = () => {
+  const [show , setShow] = useState(false)
   return (
    <>
       {/*Navbar section start*/}
@@ -16,8 +18,8 @@ const ElonlarOynasi = () => {
                 <div className="brand">
                     <Link to='/'><img src={data.brandImg} alt="brand"/><span>BookSwap</span></Link>
                 </div>
-                <ul id='nav'>
-
+                <ul id='nav' className = {show? 'show-menu' : ''}>
+                    <span  onClick={() => {  setShow(!show)}}><RiCloseFill/></span>
                     <li>
                         <Link to='/'>Bosh sahifa</Link>
                     </li>
@@ -32,9 +34,11 @@ const ElonlarOynasi = () => {
                     </li>
                 </ul>
                 <div className="icon">
-                    <li className='search'> <Link to={'/heart'}><BsHeart/></Link></li>
+                    <li className='heart'> <Link to={'/heart'}><BsHeart/></Link></li>
                     <li className='person'><Link to={'/account'}><BsPerson/></Link></li>
-                    <li className='bars' ><VscThreeBars/></li>
+                    <li className='bars' onClick={() => {
+                        setShow(!show)
+                    }} ><VscThreeBars/></li>
 
                 </div>
             </div>

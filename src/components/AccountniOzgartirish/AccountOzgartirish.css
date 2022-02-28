@@ -1,0 +1,21 @@
+.MalumotlarimCard .cardHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MalumotlarimCard .cardHeader a{
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 29px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+@media (max-width: 1200px) {
+.Malumotlarim .navbar ul{
+    display: none;
+}
+}

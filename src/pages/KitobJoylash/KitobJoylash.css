@@ -1,0 +1,192 @@
+.KitobJoylash{
+    padding: 1% 6.5%;
+    background: #E5E5E5;
+    min-height: calc(100vh - 100px);
+}
+.KitobJoylash-header{
+    margin: 2% 0;
+}
+
+.KitobJoylash-left{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+
+}
+.KitobJoylash-left .row .col-12{
+margin: 0;
+}
+.KitobJoylash-left .card{
+    width: 100%;
+    background-color: #C4C4C4;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.KitobJoylash-left .card .bookImg{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+.KitobJoylash-left .card .bookImg img{
+    width: 80%;
+    margin: 0 auto;
+}
+.KitobJoylash-left .card .bookImg div{
+     position: absolute;
+     bottom: 47%;
+     left: 28%;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background: #EEEEEE;
+     transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.KitobJoylash-left .card .bookImg .word{
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: Canaro;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.KitobJoylash-left .card2 input ,textarea{
+    border: 2px solid #000000;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.7;
+    resize: none;
+}
+.KitobJoylash-left .Card2 {
+   display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ .KitobJoylash-right .card3{
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 20px;
+     min-height: 400px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+ .KitobJoylash-right .card3 .avatar .avatar-header{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     width: 100%;
+ }
+.KitobJoylash-right .card3 .avatar .avatar-header img{
+    width: 100px;
+    height: 100px;
+    margin-right:20px ;
+}
+.KitobJoylash-right .card3 .avatar .avatar-body h2{
+    margin-top: 20px;
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+.KitobJoylash-right .card3 .btn{
+    margin-top: 20px;
+}
+.KitobJoylash-header h1{
+    display: inline-block;
+}
+.KitobJoylash-header a{
+    text-decoration: underline;
+    font-family: Canaro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #000000;
+    margin-left: 30px;
+}
+@media screen and (max-width: 1024px) {
+   
+    .KitobJoylash-right .card3 .avatar .avatar-header{
+        flex-wrap: nowrap;
+    }
+    .KitobJoylash-right .card3 .avatar .avatar-header h1{
+        font-size: 16px;
+    }
+    .KitobJoylash-right .card3 .avatar .avatar-header span{
+        font-size: 12px;
+    }
+    .KitobJoylash-right .card3 h1{
+          font-size: 20px;
+    }
+    .KitobJoylash-right .card3 .avatar .avatar-header img{
+        width: 80px;
+        height: 80px;
+        margin: 10px 0;
+        margin-right:20px;
+    } 
+    .KitobJoylash-right .card3 .avatar .avatar-body h2{
+        font-size: 16px;
+        line-height: 15px;
+    }
+    .KitobJoylash-right .card3 .avatar .avatar-body span{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .KitobJoylash-right{
+        margin-top: 20px;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 426px) {
+    .KitobJoylash-left .card{
+        width: 100%;
+        background-color: #C4C4C4;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .KitobJoylash-left .card .bookImg div{
+        position: absolute;
+        bottom: 47%;
+        left: 28%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #EEEEEE;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+   }
+   .KitobJoylash-left .card .bookImg .word{
+       position: absolute;
+       left: 3%;
+       bottom: 0;
+       color: #FFFFFF;
+       font-family: Canaro;
+       font-style: normal;
+       font-size: 16px;
+       font-weight: 600;
+   
+   }
+    .KitobJoylash-header h1{
+        font-size: 25px;
+    }
+}
+
