@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/bookswap/static/css/main.b29ddbc3.css",
+    "main.js": "/bookswap/static/js/main.94781693.js",
+    "static/media/50c7c3a5-ada6-4b5f-b5d3-53cf9cd323c4 1.png": "/bookswap/static/media/50c7c3a5-ada6-4b5f-b5d3-53cf9cd323c4 1.5a777d384373f632f7f0.png",
+    "static/media/card-img2.png": "/bookswap/static/media/card-img2.4c43a572f099c64e2253.png",
+    "static/media/card-img4.png": "/bookswap/static/media/card-img4.b595d6a037b25c7f078d.png",
+    "static/media/card-img1.png": "/bookswap/static/media/card-img1.52f353caa65e33564f65.png",
+    "static/media/hero-left-img.png": "/bookswap/static/media/hero-left-img.2ade8a2305c0b8d6af14.png",
+    "static/media/hero-right-img.png": "/bookswap/static/media/hero-right-img.02da5d20a66d2a4cacc2.png",
+    "static/media/card-img3.png": "/bookswap/static/media/card-img3.437dcbda5c453fbd9adc.png",
+    "static/media/avatar.png": "/bookswap/static/media/avatar.a403489e89091534ad56.png",
+    "static/media/Canaro-Book.woff2": "/bookswap/static/media/Canaro-Book.9f8b2d392b5a3d358a46.woff2",
+    "index.html": "/bookswap/index.html",
+    "main.b29ddbc3.css.map": "/bookswap/static/css/main.b29ddbc3.css.map",
+    "main.94781693.js.map": "/bookswap/static/js/main.94781693.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b29ddbc3.css",
+    "static/js/main.94781693.js"
+  ]
+}
